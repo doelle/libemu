@@ -61,7 +61,7 @@ public:
   int  lines()   const;
   int  columns() const;
 
-  ca*  getCookedImage();
+  ca*  getCookedImage() const;
 
   void sendString(const char *); //FIXME: dummy?
 

@@ -1,0 +1,9 @@
+libemu
+======
+
+find perparations for regression material in [konsolish].
+
+$ cd konsolish
+$ make
+$ ./emuTest
+$ gqview (or any other decent image viewer)

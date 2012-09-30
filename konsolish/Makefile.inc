@@ -11,11 +11,11 @@ done
 endef
 
 define clean
--rm $(PROGRAMS) *.o [0-9] *.bak *.a .log .#*
+-rm `cat .gitignore`
 endef
 
 define depend
-makedepend -Y -- $(CXXFLAGS) -- *.C *.h 2>/dev/null
+makedepend -Y -- $(CXXFLAGS) -- `find . -name '*.[Ch]'` 2>/dev/null
 endef
 
 clean::

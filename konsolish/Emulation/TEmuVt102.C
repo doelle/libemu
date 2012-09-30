@@ -98,7 +98,7 @@ void TEmuVt102::setScreen(int n)
   scr = screen[n&1];
 }
 
-ca* TEmuVt102::getCookedImage()
+ca* TEmuVt102::getCookedImage() const
 {
   return scr->getCookedImage();
 }
@@ -307,7 +307,7 @@ void TEmuVt102::initTokenizer()
 
 void TEmuVt102::onRcvChar(int cc)
 { int i;
-if (xaudit) { fprintf(xaudit,"%c",cc); fflush(xaudit); }
+if (xaudit) { fprintf(xaudit,"%c",cc); fflush(xaudit); } //FIXME 'fwrite' here, UNICODE
   if (cc == 127) return; //VT100: ignore.
 
   if (ces(    CTL))

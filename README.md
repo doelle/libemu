@@ -1,4 +1,0 @@
-libemu
-======
-
-Experimenting with github ...

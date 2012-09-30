@@ -9,7 +9,6 @@ include Makefile.inc
 
 TEScreen.o: TEScreen.h TECommon.h
 TEmu.o: TEmu.h
-TEmuVoice.o: TEmuVoice.h TEmu.h
 TEmuVt102.o: config.h Translation.h TEmuVt102.h TEmu.h TEScreen.h TECommon.h
 TEScreen.o: TECommon.h
 TEmuVt102.o: TEmu.h TEScreen.h TECommon.h
