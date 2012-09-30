@@ -1,5 +1,4 @@
 libemu
 ======
 
-Experimental
-Experimenting ...
+Experimenting with github ...
